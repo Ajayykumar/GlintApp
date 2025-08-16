@@ -1,13 +1,17 @@
 import express from 'express';
 import cors from 'cors';
-import { errorMiddleware } from '../../../packages/error-handler/errror-middleware';
+import { errorMiddleware } from '@packages/error-handler/error-middleware';
 import cookieParser from 'cookie-parser';
-import router from './routes/auth.router';
+import router from './routes/auth.router.js';
 import  SwaggerUi  from 'swagger-ui-express';
-const swaggerDocument = require('./swagger-output.json');
+import swaggerDocument from './swagger-output.json';
+
+
+
+
 
 const app = express();
-
+console.log("Hi Ajay Welcome to Auth service")
 app.use(cors({
     origin: ["http://localhost:3000"],
     allowedHeaders: ['Content-Type', 'Authorization'],

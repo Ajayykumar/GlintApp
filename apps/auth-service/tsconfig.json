@@ -1,13 +1,18 @@
 {
   "extends": "../../tsconfig.base.json",
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc/auth-service",
+    "module": "nodenext",
+    "target": "es2020",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+
+
+  },
+  "include": ["src/**/*.ts", "src/**/*.json","src"],
+  "exclude": ["**/*.spec.ts", "node_modules", "dist"]
 }

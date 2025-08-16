@@ -13,22 +13,17 @@
   "paths": {
     "/user/registration": {
       "post": {
-        "description": "",
         "parameters": [
           {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "example": "any"
-                },
-                "email": {
-                  "example": "any"
-                }
-              }
-            }
+           "name":{
+            "example":"shahriar"            
+           },
+           "email":{
+            "example":"letsglint@gmail.com"
+           },
+           "password":{
+            "example":"password "
+           }
           }
         ],
         "responses": {

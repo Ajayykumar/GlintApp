@@ -2,6 +2,12 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
+  
+    "compilerOptions": {
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true
+    }
+  ,
   "references": [
     {
       "path": "./apps/auth-service-e2e"
@@ -15,5 +21,6 @@
     {
       "path": "./apps/api-gateway"
     }
-  ]
+  ],
+  
 }
